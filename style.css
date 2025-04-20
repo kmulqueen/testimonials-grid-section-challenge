@@ -46,6 +46,7 @@
 body {
   background-color: var(--clr-grey-100);
   box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.2474);
+  min-height: 100vh;
 }
 
 main {
