@@ -157,8 +157,84 @@ main {
 .attribution {
   font-size: 1.1rem;
   text-align: center;
-  padding: var(--pad-reg);
+  padding: var(--spc-500);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --pad-reg: 6em;
+    --pad-lg: 8em;
+  }
+  .testimonials-container {
+    grid:
+      "card1 card1"
+      "card2 card3"
+      "card4 card4"
+      "card5 card5" / 1fr 1fr;
+  }
+  .testimonial:nth-child(1) {
+    grid-area: card1;
+    position: relative;
+  }
+
+  .testimonial:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    left: 60%;
+    top: 0;
+    width: 10.4rem;
+    height: 10.4rem;
+    background-image: url("./images/bg-pattern-quotation.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .testimonial:nth-child(2) {
+    grid-area: card2;
+  }
+  .testimonial:nth-child(3) {
+    grid-area: card3;
+  }
+  .testimonial:nth-child(4) {
+    grid-area: card4;
+  }
+  .testimonial:nth-child(5) {
+    grid-area: card5;
+  }
+
+  .testimonial__title {
+    z-index: 1;
+    position: relative;
+    max-inline-size: 60ch;
+  }
+}
+@media (min-width: 1200px) {
+  :root {
+    --pad-reg: 12em;
+    --pad-lg: 14em;
+  }
+  .testimonials-container {
+    grid:
+      "card1 card1 card2 card5"
+      "card3 card4 card4 card5"
+      / 1fr 1fr 1fr 1fr;
+  }
+  .testimonial:nth-child(1) {
+    grid-area: card1;
+    position: relative;
+  }
+  .testimonial:nth-child(2) {
+    grid-area: card2;
+  }
+  .testimonial:nth-child(3) {
+    grid-area: card3;
+  }
+  .testimonial:nth-child(4) {
+    grid-area: card4;
+  }
+  .testimonial:nth-child(5) {
+    grid-area: card5;
+  }
 }
