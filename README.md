@@ -27,8 +27,13 @@ Users should be able to:
 
 ### Screenshot
 
+**Desktop solution**
 ![Kyle Mulqueen's desktop solution](./images/kyle-solution-desktop.png)
+
+**Tablet solution**
 ![Kyle Mulqueen's tablet solution](./images/kyle-solution-tablet.png)
+
+**Mobile solution**
 ![Kyle Mulqueen's mobile solution](./images/kyle-solution-mobile.png)
 
 ### Links
